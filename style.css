@@ -42,7 +42,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.5);
     box-sizing: border-box;
     width: 20rem;
     border-radius: 1.25rem;
@@ -71,18 +71,18 @@ body {
     gap: var(--spacing-200);
     padding: 0 var(--spacing-200);
 }
-@media only screen and (max-width: 64rem) {
+@media only screen and (min-width: 20rem) {
     .card {
-    transform: translate(-50%, -50%) scale(0.8);
+        transform: translate(-50%, -50%) scale(0.7);
     }
 }
-@media only screen and (max-width: 48rem) {
+@media only screen and (min-width: 48rem) {
     .card {
-    transform: translate(-50%, -50%) scale(0.7);
+        transform: translate(-50%, -50%) scale(0.8);
     }
 }
-@media only screen and (max-width: 20rem) {
+@media only screen and (min-width: 64rem) {
     .card {
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(1);
     }
 }
